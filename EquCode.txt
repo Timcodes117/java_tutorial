@@ -1,0 +1,33 @@
+import java.utils.Scanner;
+
+
+class Helper{
+	void getConstant(String value){
+		if(value){
+			for(int i : value.toCharArray()){
+				System.out.println(i);
+			}
+		}
+	}
+}
+
+class EquCode extends Helper {
+	public static void main(String args[]) {
+		Scanner input = new Scanner(System.in);
+		EquCode solver = new EquCode();
+
+		// ask user to input equation
+		System.out.println("Input your linear Equation: ");
+		myEquaton = input.nextLine();
+
+		if(myEquation.split("=").length < 2){
+			System.out.println("Your equation is not valid.. examples of linear Equations are [X + 3 = 5, 2y + 4y = 3, 4y + 3 = 6, etc...]");
+		}else{
+			System.out.println("from your equ: " + myEquation);
+			System.out.println("Solving for ");
+			getConstant("5x + 5p");
+		}
+
+		
+	}
+}
